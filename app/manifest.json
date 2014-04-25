@@ -1,0 +1,23 @@
+﻿{
+	"name": "ChromeAngular",
+	"version": "1.0",
+	"manifest_version": 2,
+
+	"description": "Chrome extensions with AngularJS The true one.",
+	"icons": {
+		"128": "favicon.ico"
+	},
+	"browser_action": {
+		"default_icon": "favicon.ico",
+		"default_popup": "index.html",
+		"default_title": "AngularJSChromeEx"
+	},
+	"content_scripts": [ {
+	"js": ["scripts/content.js" ],
+	"matches": [ "http://www.wordreference.com/*" ],
+	"run_at": "document_start"
+	} ],
+	"minimum_chrome_version": "18",
+	"permissions": [ "http://*/*", "https://*/*", "unlimitedStorage", "contextMenus", "cookies", "tabs", "notifications" ]
+
+}
