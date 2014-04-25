@@ -5,7 +5,8 @@ angular
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngRoute'
+    'ngRoute',
+    'UserService'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -13,7 +14,11 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/setting', {
+        templateUrl: 'views/setting.html',
+        controller: 'SettingCtrl'
+      })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/not-found'
       });
   });

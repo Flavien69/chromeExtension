@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('testyoApp')
-  .controller('MainCtrl', function ($scope, $location, UserService) {
+  .controller('SettingCtrl', function ($scope,$location, UserService) {
   var test = $location.path();
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
@@ -11,5 +11,9 @@ angular.module('testyoApp')
     ];
     
     $scope.user = UserService.user;
-
+    
+    $scope.saveSettings = function(){
+    	UserService.save();
+    }
+    
   });

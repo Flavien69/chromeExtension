@@ -19,10 +19,5 @@
 	} ],
 	"minimum_chrome_version": "18",
 	"permissions": [ "http://*/*", "https://*/*", "unlimitedStorage", "contextMenus", "cookies", "tabs", "notifications" ],
-    "background": {
-    "scripts": [
-        "/scripts/background.js"
-    ]
-    },
-	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+	"chrome_url_overrides" : {"newtab": "index.html"}
 }
