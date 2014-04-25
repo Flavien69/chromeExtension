@@ -11,5 +11,9 @@ angular.module('testyoApp')
     ];
     
     $scope.user = UserService.user;
+    
+    $scope.trytest = function(){
+    	localStorage.test = $scope.test;
+    }
 
   });
