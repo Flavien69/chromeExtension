@@ -6,7 +6,7 @@ angular
     'ngResource',
     'ngSanitize',
     'ngRoute',
-    'UserService'
+    'Services'
   ])
   .config(function ($routeProvider) {
     $routeProvider

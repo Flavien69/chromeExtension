@@ -1,0 +1,1 @@
+chrome.extension.sendMessage({greeting: "reload"}, function(response) {});

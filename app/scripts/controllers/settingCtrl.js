@@ -14,6 +14,6 @@ angular.module('testyoApp')
     
     $scope.saveSettings = function(){
     	UserService.save();
-    }
+    };
     
   });
